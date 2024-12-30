@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.pricing-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-button {
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: #ddd;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.toggle-button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.pricing-card {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.pricing-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pricing-card .description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.pricing-card .price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.pricing-card button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-card button:hover {
+    background-color: #0056b3;
+}
+
+.yearly-plan {
+    background-color: #f0f8ff;
+    border: 2px solid #007bff;
+}
+
+.feature-comparison {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.feature-comparison h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #333;
+}
+
+.feature-comparison table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.feature-comparison th, .feature-comparison td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.feature-comparison th {
+    background-color: #007bff;
+    color: white;
+}
+
+.feature-comparison tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .feature-comparison table {
+        font-size: 14px;
+    }
+
+    .pricing-card h2 {
+        font-size: 20px;
+    }
+
+    .pricing-card .price {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
